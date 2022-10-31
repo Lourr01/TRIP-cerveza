@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style5.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap" rel="stylesheet">
+    <title>TRIP</title>
+    <link rel="apple-touch-icon" sizes="57x57" href="icon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="icon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="icon/android-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="icon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="icon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="icon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="icon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="icon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="icon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="icon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="icon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
+    <link rel="manifest" href="icon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="icon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+    <div id="Plantilla">
+        <header class="header">
+            <div class="logo">
+                <a href="index.html"><img class="logo" src="TRIPcerveza.png" alt="TRIPcerveceria"></a>
+            </div>
+            <div class="menu" onclick="myFunction()";>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav id="nav">
+                <ul class="listmenu" type="none">
+                    <li><a href="index.html"  class="index">Inicio</a></li><br>
+                    <li><a href="index2.html"  class="index">Tu plan</a></li><br>
+                    <li><a href="index3.html"  class="index">Nuestra Cervezas</a></li><br>
+                    <li><a href="index4.html"  class="index">Donde Encontrarnos</a></li><br>
+                </ul>
+            </nav>
+        </header>
+        <section id="section1" class="contenedor1">
+            <div  class="tit">
+                <h4>Es hora de hacer tu reserva</h4>
+            </div>
+            <div class="calendar">
+                <div class="calendar__info">
+                    <div class="calendar__prev" id="prev-month">&#9664;</div>
+                    <div class="calendar__month" id="month"></div>
+                    <div class="calendar__year" id="year"></div>
+                    <div class="calendar__next" id="next-month">&#9654;</div>
+                </div>
+                <div class="calendar__week">
+                    <div class="calendar__day calendar__item">LUN</div>
+                    <div class="calendar__day calendar__item">MAR</div>
+                    <div class="calendar__day calendar__item">MIE</div>
+                    <div class="calendar__day calendar__item">JUE</div>
+                    <div class="calendar__day calendar__item">VIE</div>
+                    <div class="calendar__day calendar__item">SAB</div>
+                    <div class="calendar__day calendar__item">DOM</div>
+                </div>
+                <div class="calendar__dates" id="dates"></div>
+            </div>
+        </section>
+        <section id="section2" class="contededor2">
+            <h3 class="complete">  Ya esta a un paso de tener su salida ideal!!   Complete el formulario</h3><br>
+            <div class="smart-wrap">
+                <div class="smart-forms smart-container wrap-2">
+                    <form method="post" action="/" id="contact">
+                        <div class="form-body">
+                            <div class="0">
+                                <label for="guestname" class="field-label">Nombre</label>
+                                <label for="guestname" class="field prepend-icon">
+                                <input type="text" name="guestname" id="guestname" class="gui-input" required="" placeholder="Nombre">
+                                <span class="field-icon"><i class="fa fa-user"></i></span>  
+                                </label>
+                            </div>
+                            <div class="section0">
+                                <label for="guestname" class="field-label">Apellido</label>
+                                <label for="guestname" class="field prepend-icon">
+                                <input type="text" name="guestname" id="guestname" class="gui-input" required="" placeholder="Apellido">
+                                <span class="field-icon"><i class="fa fa-user"></i></span>  
+                                </label>
+                            </div>
+                            <div class="frm-row">
+                                <div class="section colm colm6">
+                                <label for="guestemail" class="field-label"> Direccion de Email </label>
+                                <label for="guestemail" class="field prepend-icon">
+                                    <input type="email" name="guestemail" id="guestemail" class="gui-input" required="" placeholder="Email">
+                                    <span class="field-icon"><i class="fa fa-envelope"></i></span>  
+                                </label>
+                            </div>
+                            <div class="section colm colm6">
+                                <label for="guestelephone" class="field-label">Telefono / Mobil</label>
+                                <label for="guestelephone" class="field prepend-icon">
+                                    <input type="text" name="guestelephone" id="guestelephone" class="gui-input" required="" placeholder="Telefono / Mobil">
+                                    <span class="field-icon"><i class="fa fa-phone-square"></i></span>  
+                                </label>
+                                </div>
+                            </div>
+                            <div class="frm-row">
+                                <div class="section colm colm6">
+                                <label for="adultos" class="field-label">Numero de adultos</label>
+                                <label for="adultos" class="field prepend-icon">
+                                    <input type="number" id="adultos" name="adultos" class="gui-input" required="" placeholder="Numero de adultos">
+                                    <span class="field-icon"><i class="fa fa-users"></i></span>  
+                                </label>
+                            </div>
+                            <div class="frm-row">
+                                <div class="section colm colm6">
+                                <label for="checkin" class="field-label">Fecha de reserva</label>
+                                <label for="checkin" class="field prepend-icon">
+                                    <input type="text" id="checkin" name="datetimes" class="gui-input" required="" placeholder="mm/dd/yyyy">
+                                    <span class="field-icon"><i class="fa fa-calendar"></i></span>  
+                                </label>
+                                </div>
+                            </div><br>
+                            <div class="spacer-t20 spacer-b30">
+                                <div class="tagline"><span>Por favor responda estas preguntas para una reserva placentera</span></div>
+                            </div>
+                            <div class="frm-row">
+                                <div class="option-group field">
+                                
+                                <div class="section-colm-colm6">
+                                    <labelclass="switch">
+                                        <input type="checkbox" name="switch1" id="switch1" value="switch1">
+                                        <span class="switch-label" data-on="YES" data-off="NO"></span>
+                                        <span class="opciones">Alguno de los integrantes es vegetariano/vegano?</span>
+                                    </label>
+                                </div>
+                            </div><br>
+                        <div class="section3">
+                            <label for="comment" class="field-label1">¿Algo más que debamos saber?</label><br>
+                            <label for="comment" class="field-prepend-icon">
+                                <textarea class="gui-textarea" id="comment" name="comment" placeholder="Infórmenos sobre cualquier necesidad especial que debamos saber."></textarea>
+                                <span class="field-icon"><i class="fa fa-comments"></i></span>
+                                <span class="input-hint"> <br>
+                                    <strong>Por favor:</strong> sea lo más descriptivo posible
+                                </span>   
+                            </label>
+                        </div><br>                                              
+                        <div class="form-footer">
+                            <button type="submit" class="button btn-primary">Confirmar reserva</button>
+                            <button type="reset" class="button">Cancel</button>
+                        </div>
+                    </form>
+                    </div>
+                </div>
+            </div><br>
+            <div class="seguiente">
+                <a href="index2.html" class="boton">atras</a>
+            </div>
+        </section>
+    <script src="index2.js"></script>
+    <script src="index3.js"></script>
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+            <script type="text/javascript" src="js/jquery-ui-custom.min.js"></script>
+            <script type="text/javascript" src="js/jquery.validate.min.js"></script>
+            <script type="text/javascript" src="js/additional-methods.min.js"></script>
+</body>
+</html>
